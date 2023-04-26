@@ -1,0 +1,91 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../imagens/bg-repeat.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+
+form {
+  width: 340px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color:black;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #3ccc87;
+  color: white;
+  cursor: pointer;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  margin: 52px;
+}
+
+.titulo {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 11px;
+}
+
+.descricao {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffff;
+  width: 300px;
+  height: 54px;
+}
+
+#obrigatorio {
+  min-width: 100%;
+  margin-right: 7px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+
+.erro {
+    border-color: red;
+  }
+  
+  .erro + p.erro {
+    width: 100%;
+    height: auto;
+    top: 329px;
+    left: 21px;
+    margin-bottom: 5px;
+    color: red;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  
