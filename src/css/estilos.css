@@ -34,7 +34,7 @@ textarea {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color:black;
+  color: black;
   resize: none;
 }
 
@@ -72,20 +72,85 @@ input[type="submit"] {
   font-size: 15px;
 }
 
-
-
 .erro {
-    border-color: red;
+  border-color: red;
+}
+
+.erro + p.erro {
+  width: 100%;
+  height: auto;
+  top: 329px;
+  left: 21px;
+  margin-bottom: 5px;
+  color: red;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
   }
-  
+
+  form {
+    height: auto;
+    margin-top: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .titulo {
+    text-align: center;
+  }
+  .descricao {
+    text-align: center;
+    font-size: 14px;
+    height: auto;
+    flex-direction: column;
+    padding-top: 15px;
+  }
   .erro + p.erro {
     width: 100%;
     height: auto;
-    top: 329px;
-    left: 21px;
     margin-bottom: 5px;
-    color: red;
+    font-size: 10px;
+    font-weight: 400;
+    padding-right: 225px;
+  }
+  #obrigatorio {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    height: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .descricao {
+    font-size: 14px;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .erro + p.erro {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
     font-size: 10px;
     font-weight: 400;
   }
-  
+}
